@@ -12,8 +12,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <script src="https://kit.fontawesome.com/067fc88846.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/067fc88846.js" crossorigin="anonymous"></script>
       </head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNKR8EHTC1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WNKR8EHTC1');
+      </script>
       <body className={inter.className}>{children}</body>
     </html>
   );
